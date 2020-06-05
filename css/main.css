@@ -1,0 +1,300 @@
+:root {
+  --title-color: #322153;
+  --primary-color: #34cb79;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #f0f0f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--title-color);
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+#page-home {
+  height: 100vh;
+  background: url("./assets/home-background.svg") no-repeat;
+  background-position: 35vw bottom;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+header a {
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+header a span {
+  height: 20px;
+  width: 20px;
+  background: url("./assets/log-in.svg");
+  display: flex;
+  margin-right: 16px;
+}
+
+.content {
+  height: 100%;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 560px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main h1 {
+  font-size: 3em;
+}
+
+main p {
+  font-size: 1.5em;
+  line-height: 38px;
+  margin-top: 16px;
+}
+
+main a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 40px;
+  transition: 400ms;
+}
+
+main a:hover {
+  background: #2fb86e;
+}
+
+main a span {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+main a span::after {
+  content: "";
+  background-image: url("./assets/search.svg");
+  width: 20px;
+  height: 20px;
+}
+
+#page-cadastro main {
+  width: 100%;
+  max-width: 736px;
+  background: white;
+  margin: 80px auto;
+  padding: 64px;
+}
+
+#page-cadastro main h1 {
+  font-size: 2.25em;
+}
+
+#page-cadastro main h2 {
+  font-size: 1.5em;
+}
+
+#page-cadastro main p {
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  color: #6c6c80;
+}
+
+#page-cadastro main .box-items {
+  margin-top: 64px;
+}
+
+#page-cadastro main .items-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page-cadastro main .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#page-cadastro main .item {
+  width: 100%;
+  max-width: 192px;
+  max-height: 184px;
+  background: #e1faec;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px;
+  margin: 0 auto;
+}
+
+#page-cadastro main .item:hover {
+  background: linear-gradient(0deg, #e1faec 0%, #ffffff 100%);
+  border: 2px solid #34cb79;
+  box-sizing: border-box;
+  border-radius: 4.30811px;
+  cursor: pointer;
+}
+
+#page-cadastro main .item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 34px;
+}
+
+#page-cadastro main .item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #322153;
+}
+
+#page-cadastro main p {
+  margin-top: 0;
+}
+
+#page-cadastro main form {
+  margin-top: 64px;
+}
+
+#page-cadastro main form fieldset {
+  border: 0;
+  margin-top: 64px;
+}
+
+#page-cadastro main form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-cadastro main form .input-group {
+  display: flex;
+}
+
+#page-cadastro main form .input-group .fg3 {
+  flex-grow: 3;
+}
+
+#page-cadastro main form input,
+form select {
+  background: #f0f0f5;
+  border-radius: 8px;
+  border: 0;
+  margin-top: 8px;
+  outline: none;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+
+#page-cadastro main form button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-top: 64px;
+  float: right;
+}
+
+#page-cadastro main form label {
+  color: #6c6c80;
+  font-size: 0.875em;
+}
+
+form .input-group .field + .field {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 1366px) {
+  #page-home {
+    background-position: 50vw bottom;
+    background-size: 40em;
+  }
+  #page-home main h1 {
+    font-size: 2.5em;
+  }
+
+  #page-home main p {
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  #page-home main a {
+    margin-top: 10px;
+  }
+}
++ @media screen and (max-width: 900px) {
+  #page-home {
+    background-position-x: 70vw;
+  }
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+  header a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #page-home main {
+    align-items: center;
+  }
+}
