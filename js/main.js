@@ -24,16 +24,16 @@ function getCities(event) {
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`
     const citiesSelect = document.querySelector("select[name=cities]")
     const inputState = document.querySelector("input[name=state]");
-    const inputCity = document.querySelector("input[name=city]");
 
     inputState.value = event.target.options[event.target.selectedIndex].label
-    inputCity.value = event.target.options[event.target.selectedIndex].label
+
+    citiesSelect.innerHTML = ""
 
     fetch(url)
         .then(res => res.json())
         .then(citiesList => {
             for (city of citiesList) {
-                citiesSelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+                citiesSelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
             }
 
             citiesSelect.disabled = false
