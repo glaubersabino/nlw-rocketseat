@@ -148,58 +148,10 @@ main a span::after {
   color: #6c6c80;
 }
 
-#page-cadastro main .box-items {
-  margin-top: 64px;
-}
-
-#page-cadastro main .items-header {
+#page-cadastro main fieldset legend {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#page-cadastro main .items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-#page-cadastro main .item {
-  width: 100%;
-  max-width: 192px;
-  max-height: 184px;
-  background: #e1faec;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 64px;
-  margin: 0 auto;
-}
-
-#page-cadastro main .item:hover {
-  background: linear-gradient(0deg, #e1faec 0%, #ffffff 100%);
-  border: 2px solid #34cb79;
-  box-sizing: border-box;
-  border-radius: 4.30811px;
-  cursor: pointer;
-}
-
-#page-cadastro main .item img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 34px;
-}
-
-#page-cadastro main .item p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #322153;
 }
 
 #page-cadastro main p {
@@ -212,7 +164,7 @@ main a span::after {
 
 #page-cadastro main form fieldset {
   border: 0;
-  margin-top: 64px;
+  margin-top: 40px;
 }
 
 #page-cadastro main form .field {
@@ -260,6 +212,54 @@ form select {
 
 form .input-group .field + .field {
   margin-left: 24px;
+}
+
+.items-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.items-grid li{
+  background-color: #e1faec;
+  list-style: none;
+  border: 2px solid #e1faec;
+  height: 180px;
+  padding: 32px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.items-grid li:hover{
+  background: linear-gradient(0deg, #e1faec 0%, #ffffff 100%);
+  border: 2px solid #34cb79;
+  border-radius: 4.30811px;
+  cursor: pointer;
+}
+
+.items-grid li span{
+  margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+}
+
+.items-grid li img,
+.items-grid li span{
+  pointer-events: none;
+}
+
+.items-grid li.selected{
+  background: linear-gradient(0deg, #e1faec 0%, #ffffff 100%);
+  border: 2px solid #34cb79;
+  border-radius: 4.30811px;
 }
 
 @media screen and (max-width: 1366px) {

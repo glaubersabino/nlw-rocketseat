@@ -39,3 +39,16 @@ function getCities(event) {
             citiesSelect.disabled = false
         });
 }
+
+const itemsToCollect = document.querySelectorAll(".items-grid li")
+
+for (item of itemsToCollect) {
+    item.addEventListener("click", handleSelectedItem)
+}
+
+function handleSelectedItem(event) {
+    const itemLi = event.target
+    const itemId = itemLi.dataset.id
+
+    itemLi.classList.toggle("selected")
+}
