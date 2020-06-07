@@ -41,14 +41,35 @@ function getCities(event) {
 }
 
 const itemsToCollect = document.querySelectorAll(".items-grid li")
+const collectedItems = document.querySelector("input[name=items]")
 
 for (item of itemsToCollect) {
     item.addEventListener("click", handleSelectedItem)
 }
+
+let selectedItems = []
 
 function handleSelectedItem(event) {
     const itemLi = event.target
     const itemId = itemLi.dataset.id
 
     itemLi.classList.toggle("selected")
+
+    const alreadySelected = selectedItems.findIndex(item => {
+        const itemFound = item == itemId
+        return itemFound
+    })
+
+    if (alreadySelected >= 0) {
+        const filteredItems = selectedItems.filter(item => {
+            const itemIsDiferent = item != itemId
+            return itemIsDiferent
+        })
+
+        selectedItems = filteredItems
+    } else {
+        selectedItems.push(itemId)
+    }
+
+    collectedItems.value = selectedItems
 }
