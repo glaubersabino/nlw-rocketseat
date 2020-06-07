@@ -1,0 +1,26 @@
+{
+  "name": "nlw-rocketseat",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante o evento Next Level Week da Rocketseat.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaubersabino/nlw-rocketseat.git"
+  },
+  "keywords": [],
+  "author": "Glauber Albuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaubersabino/nlw-rocketseat/issues"
+  },
+  "homepage": "https://github.com/glaubersabino/nlw-rocketseat#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
