@@ -263,6 +263,152 @@ form .input-group .field + .field {
   border-radius: 4.30811px;
 }
 
+.modal.hide{
+  display: none;
+}
+
+.modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e0a14ef;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .content{
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 420px;
+}
+
+.modal .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.modal .header a{
+  background-image: url("../assets/x.svg");
+  width: 20px;
+  height: 20px;
+  display: flex;
+  font-size: 0.01px;
+}
+
+.modal .header h1{
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.modal form label{
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal form{
+  width: 100%;
+}
+
+.modal form .field{
+  display: flex;
+}
+
+.modal form input{
+  flex: 1;
+  background-color: #f0f0f5;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+.modal form button{
+  width: 72px;
+  height: 72px;
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  transition: 400ms;
+}
+
+.modal form button:hover{
+  background-color: #2fb86e;
+}
+
+#bodySearch::after{
+  content: "";
+  position: fixed;
+  background: #ffffff;
+  top: 290px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#page-search h4 {
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 32px;
+}
+
+#page-search main {
+  width: 100%;
+  max-width: 1100px;
+  /* background: white;
+  margin: 80px auto;
+  padding: 64px; */
+}
+
+#page-search main{
+  margin: 48px;
+}
+
+#page-search main .cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+#page-search main .card img{
+  width: 100%;
+  height: 220px;
+  border-radius: 8px 8px 0 0;
+}
+
+#page-search main .card h1{
+  font-size: 36px;
+  line-height: 41px;
+  color: #322153;
+  margin-top: 32px;
+}
+
+#page-search main .card h3{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-style: 24px;
+  line-height: 34px;
+  color: var(--primary-color);
+  margin: 24px 0;
+}
+
+#page-search main .card p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c80;
+}
+
 @media screen and (max-width: 1366px) {
   #page-home {
     background-position: 50vw bottom;

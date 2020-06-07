@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rocketseat - NextLevel Starter</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="./assets/favicon.png" />
-  </head>
-  <body>
-    <div id="page-home">
-      <div class="content">
-        <header>
-          <img src="./assets/logo.svg" alt="Ecoleta" />
-          <a href="./cadastro.html">
-            <span></span>
-            Cadastre um ponto de coleta
-          </a>
-        </header>
-        <main>
-          <h1>Seu Marketplace de coleta de resíduos.</h1>
-          <p>
-            Ajudamos pessoas a encontrar pontos de coleta de forma eficiente.
-          </p>
-          <a href="#">
-            <span></span>
-            Pesquisar pontos de coleta
-          </a>
-        </main>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rocketseat - NextLevel Starter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="./assets/favicon.png" />
+</head>
+
+<body>
+  <div id="page-home">
+    <div class="content">
+      <header>
+        <img src="./assets/logo.svg" alt="Ecoleta" />
+        <a href="./cadastro.html">
+          <span></span>
+          Cadastre um ponto de coleta
+        </a>
+      </header>
+      <main>
+        <h1>Seu Marketplace de coleta de resíduos.</h1>
+        <p>
+          Ajudamos pessoas a encontrar pontos de coleta de forma eficiente.
+        </p>
+        <a href="#" id="buttonSearch">
+          <span></span>
+          Pesquisar pontos de coleta
+        </a>
+      </main>
     </div>
-  </body>
+  </div>
+
+  <div class="modal hide">
+    <div class="content">
+      <div class="header">
+        <h1>Pontos de coleta</h1>
+        <a href="#">Fechar</a>
+      </div>
+      <form action="./pesquisa-res.html">
+        <label for="search">Cidade</label>
+        <div class="search field">
+          <input type="text" name="search" placeholder="Pesquise por cidade">
+          <button><img src="./assets/search.svg" alt="Buscar"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
