@@ -427,7 +427,7 @@ form .input-group .field + .field {
     margin-top: 10px;
   }
 }
-+ @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   #page-home {
     background-position-x: 70vw;
   }
@@ -443,5 +443,14 @@ form .input-group .field + .field {
   }
   #page-home main {
     align-items: center;
+  }
+
+  #page-cadastro main form fieldset{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-cadastro main form .field{
+    margin-left: 0;
   }
 }
