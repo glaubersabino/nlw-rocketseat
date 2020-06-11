@@ -30,10 +30,10 @@ db.serialize(() => {
     db.run(query, [
         "https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1161&q=80",
         "Colectoria",
-        "",
-        "",
-        "",
-        "",
+        "Guilherme Gemballa, Jardim América",
+        "260",
+        "Santa Catarina",
+        "Rio do Sul",
         ""
     ])
 })
