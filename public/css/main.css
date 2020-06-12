@@ -301,7 +301,7 @@ form .input-group .field + .field {
   font-size: 0.01px;
 }
 
-.modal .header h1{
+.modal h1{
   color: #ffffff;
   font-size: 36px;
   line-height: 42px;
@@ -345,14 +345,19 @@ form .input-group .field + .field {
   background-color: #2fb86e;
 }
 
+#bodySearch{
+  background: #ffffff;
+}
+
 #bodySearch::after{
   content: "";
-  position: fixed;
-  background: #ffffff;
-  top: 290px;
+  position: absolute;
+  background: #f0f0f5;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 16rem;
   z-index: -1;
 }
 

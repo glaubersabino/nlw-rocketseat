@@ -22,7 +22,7 @@ function getStates() {
 function getCities(event) {
     const uf = event.target.value
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`
-    const citiesSelect = document.querySelector("select[name=cities]")
+    const citiesSelect = document.querySelector("select[name=city]")
     const inputState = document.querySelector("input[name=state]");
 
     inputState.value = event.target.options[event.target.selectedIndex].label
