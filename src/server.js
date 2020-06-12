@@ -20,7 +20,17 @@ server.get("/create", (req, res) => {
 })
 
 server.get("/search", (req, res) => {
-    return res.render("search.html")
+    // Realiza uma consulta no banco de dados.
+    db.all(`SELECT * FROM places`, function (err, rows) {
+        if (err) {
+            return console.log(err)
+        }
+
+        const total = rows.length
+
+        // Renderiza os dados na página html.
+        return res.render("search.html", { places: rows, total: total })
+    })
 })
 
 
